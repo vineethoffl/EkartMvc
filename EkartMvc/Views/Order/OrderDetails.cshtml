@@ -1,0 +1,111 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Details</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        .order-container {
+            max-width: 600px;
+            margin: auto;
+            border: 1px solid #ddd;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        .order-summary {
+            margin-top: 20px;
+            background-color: #f9f9f9;
+            padding: 10px;
+        }
+
+        .product-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+            .product-item img {
+                max-width: 80px;
+                max-height: 80px;
+                margin-right: 10px;
+            }
+
+        .product-details {
+            flex-grow: 1;
+        }
+
+        .user-details {
+            margin-top: 20px;
+        }
+
+        .total-amount {
+            margin-top: 20px;
+            text-align: right;
+            font-weight: bold;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="order-container">
+        <h2>Order Details</h2>
+
+        <div class="order-summary">
+            <!-- Product Items -->
+            <div class="product-item">
+                <img src="product1.jpg" alt="Product 1">
+                <div class="product-details">
+                    <h4>Product 1</h4>
+                    <p>Description of Product 1</p>
+                    <p>Quantity: 2</p>
+                    <p>Price: $20.00</p>
+                </div>
+            </div>
+
+            <div class="product-item">
+                <img src="product2.jpg" alt="Product 2">
+                <div class="product-details">
+                    <h4>Product 2</h4>
+                    <p>Description of Product 2</p>
+                    <p>Quantity: 1</p>
+                    <p>Price: $15.00</p>
+                </div>
+            </div>
+            <!-- End Product Items -->
+        </div>
+
+        <div class="user-details">
+            <!-- User Details -->
+            <h3>User Information</h3>
+            <p><strong>Name:</strong> John Doe</p>
+            <p><strong>Email:</strong> john.doe@example.com</p>
+            <p><strong>Address:</strong> 123 Main Street, Cityville</p>
+            <!-- End User Details -->
+        </div>
+
+        <div class="total-amount">
+            <!-- Total Amount -->
+            <p><strong>Total Amount:</strong> $55.00</p>
+            <!-- End Total Amount -->
+        </div>
+    </div>
+</body>
+</html>
+
